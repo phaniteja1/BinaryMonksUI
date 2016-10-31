@@ -23,6 +23,10 @@ export default Ember.Route.extend({
     return (input.indexOf('help') > -1);
   },
 
+  inputContainsHome(input) {
+    return (input.indexOf('home') > -1);
+  },
+
   inputContainsFeed(input) {
     return (input.trim() === '');
   },
@@ -37,6 +41,7 @@ export default Ember.Route.extend({
         case this.inputContainsHelp(input): this.transitionTo('index.help'); break;
         case this.inputContainsChannels(input): this.transitionTo('index.channels'); break;
         case this.inputContainsFeed(input): this.transitionTo('index.feed'); break;
+        case this.inputContainsHome(input): this.transitionTo('index.home'); break;
         default: this.transitionTo('index.help'); break;
       }
     }

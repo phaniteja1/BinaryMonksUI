@@ -11,6 +11,7 @@ Router.map(function() {
     this.route('help');
     this.route('channels');
     this.route('feed');
+    this.route('home');
   });
 });
 
