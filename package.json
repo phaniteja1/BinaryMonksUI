@@ -8,6 +8,7 @@
     "test": "tests"
   },
   "scripts": {
+    "start": "ember serve --port=${PORT}",
     "build": "ember build",
     "start": "ember server",
     "test": "ember test"
@@ -18,7 +19,8 @@
   },
   "author": "",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
+    "bower": "^1.3.12",
     "broccoli-asset-rev": "^2.4.5",
     "ember-ajax": "^2.4.1",
     "ember-bootstrap": "0.11.0",
@@ -44,5 +46,9 @@
     "ember-masonry-grid": "1.1.0",
     "ember-resolver": "^2.0.3",
     "loader.js": "^4.0.10"
-  }
+  },
+
+  "devDependencies": {
+    "ember-cli": "2.9.0-beta.2"
+}
 }
