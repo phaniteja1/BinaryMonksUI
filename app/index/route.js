@@ -36,7 +36,6 @@ export default Ember.Route.extend({
     processInput() {
       let input = this.controller.get('search');
       this.set('uiState.input', input);
-
       switch(true) {
         case this.inputContainsHelp(input): this.transitionTo('index.help'); break;
         case this.inputContainsChannels(input): this.transitionTo('index.channels'); break;
