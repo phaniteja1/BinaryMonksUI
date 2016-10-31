@@ -7,6 +7,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('index', { path: '/'}, function() {
+    this.route('help');
+    this.route('channels');
+    this.route('feed');
+  });
 });
 
 export default Router;

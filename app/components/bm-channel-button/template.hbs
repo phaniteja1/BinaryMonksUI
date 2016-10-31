@@ -1,0 +1,5 @@
+{{#if isMyChannel}}
+    {{fa-icon "minus-circle" size=2 class="text-danger" click=(action 'removeChannel' channel)}}
+{{else}}
+    {{fa-icon "plus-circle" size=2 class="text-success" click=(action 'addChannel' channel)}}
+{{/if}}

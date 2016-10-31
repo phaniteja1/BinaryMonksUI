@@ -1,0 +1,13 @@
+<div class="col-md-4">
+    <div class="card text-xs-center fixed-medium-height">
+        <div class="card-header">
+            <a target="_new" href={{feed.link}} class="title">{{truncate feed.title 40}}</a>
+        </div>
+        <div class="card-block">
+            <p class="card-text">{{truncate feed.description 350}}</p>
+        </div>
+        <div class="card-footer text-muted">
+            Source: {{titleize feed.source}}
+        </div>
+    </div>
+</div>
