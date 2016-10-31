@@ -11,7 +11,8 @@
     "start": "ember serve --port=${PORT}",
     "build": "ember build",
     "start": "ember server",
-    "test": "ember test"
+    "test": "ember test",
+    "postinstall": "bower cache clean && bower install"
   },
   "repository": "",
   "engines": {
