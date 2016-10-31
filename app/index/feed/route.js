@@ -14,7 +14,6 @@ export default Ember.Route.extend({
   setupController: function(controller, model) {
     controller.set('feeds', model.feeds);
     this.set('feeds', model.feeds);
-    // this.set('mychannels', model.user.channels);
     this.set('user', model.user);
     controller.set('myfeed', this.filterFeeds());
   },
