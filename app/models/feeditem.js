@@ -19,7 +19,7 @@ export default DS.Model.extend({
   channel: attr('string'),
 
   /** @type {String} */
-  tags: attr('string'),
+  tags: attr(),
 
   /** @type {String} */
   date: attr('string')

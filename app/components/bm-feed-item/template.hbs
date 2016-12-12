@@ -7,7 +7,12 @@
             <p class="card-text">{{truncate feed.description 350}}</p>
         </div>
         <div class="card-footer text-muted">
-            Source: {{titleize feed.source}}
+            {{log feed.tags}}
+            <div class="row">
+                <div class="col-xs-6">Source: {{titleize feed.source}}</div>
+                <div class="col-xs-6">Tags: {{feed.tags}}</div>
+            </div>
+            
         </div>
     </div>
 </div>

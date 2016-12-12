@@ -1,12 +1,8 @@
-<div class="nav-menu">
-    <h2 align="center">BinaryMonks</h2>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12">
-            {{input type="text" value=search enter="processInput"}}
-        </div>
+<div class="custom-container">
+    <div class="header">
+        <span>>binary-monks:</span>{{input type="text" value=search enter="processInput" placeholder="$help" autofocus="autofocus"}}
     </div>
-    {{outlet}}
+    <div class="content">
+        {{outlet}}
+    </div>
 </div>
